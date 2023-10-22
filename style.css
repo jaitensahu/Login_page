@@ -13,6 +13,7 @@
   --textClr: black;
   --whiteColor:white;
   --redForError:red;
+  --resetbg:white;
 }
 
 body {
@@ -99,7 +100,7 @@ body {
 }
 
 .btn-41 {
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid var(--textClr);
   z-index: 1;
   color: var(--textClr);
   font-weight: bold;
@@ -197,6 +198,7 @@ input {
   border-radius: 5px;
   background-color: transparent;
   border: 1px solid var(--textClr);
+  color: var(--textClr);
   /* height: 40px; */
 }
 .error_signUp{
@@ -408,7 +410,7 @@ footer p {
   margin-top: -18px;
   width: 25%;
   min-width: 370px;
-  background-color: #ffffff;
+  background-color: var(--resetbg);
   padding: 145px 20px 100px;
   position: fixed;
   border-radius: 10px;
@@ -460,7 +462,7 @@ margin: 20px 0;
   /* padding: 10px px; */
   /* background-color: #000000; */
   background-color: transparent;
-  color: black;
+  color: var(--textClr);
   /* font-weight: bold; */
   
 }
@@ -482,7 +484,7 @@ margin: 20px 0;
   background-color: lightcoral;
 } */
 input:hover{
-  border: 1px solid rgb(0, 0, 0);
+  /* border: 1px solid rgb(0, 0, 0); */
 }
 .error_signUp,.notAble{
   color: var(--redForError);

@@ -284,6 +284,8 @@ function dayMode() {
   r.style.setProperty("--bgcolor", "#FAEBD7");
   r.style.setProperty("--footerClr", "#F15E64");
   r.style.setProperty("--textClr", "black");
+  r.style.setProperty("--resetbg","white")
+  r.style.setProperty("--redForError","red")
 }
 day.style.display="none";
 // Create a function for setting a variable value
@@ -292,6 +294,7 @@ function darkMode() {
   r.style.setProperty("--footerClr", "black");
   r.style.setProperty("--textClr", "white");
   r.style.setProperty("--redForError","white")
+  r.style.setProperty("--resetbg","black")
 }
 
 dark.addEventListener("click", () => {
