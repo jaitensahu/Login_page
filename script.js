@@ -118,7 +118,7 @@ signUp_btn2.addEventListener("click", (e) => {
     alert("Password not matching");
     return;
   }
-  if(!contansAt(emailAdd)){
+  if(!contansAt(emailAdd.value)){
     alert("Enter valid Email");
     return;
   }
