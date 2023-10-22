@@ -7,7 +7,7 @@
 
 Visit : [Annoying-Login-Page](https://jaitensahu.github.io/Login_page/)
 
-## Before Participating Read This : [CONTRIBUTING.md)
+## Before Participating Read This : [CONTRIBUTING.md](https://github.com/jaitensahu/Login_page/blob/main/Contributing.md)
 
 
 ## Technologies and Tools :
