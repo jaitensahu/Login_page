@@ -1,55 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Here</title>
     <link rel="stylesheet" href="style.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <script src="https://kit.fontawesome.com/7c5861f7d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://kit.fontawesome.com/7c5861f7d9.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="container">
         <div class="colors">
             <!-- <div id="red"></div> -->
-            <div id="dark"><i class="fa-solid fa-moon"></i></div>
+            <div>
+                <i id="dark" class="fa-solid fa-moon"></i> 
+                <i id="day" class="fa-solid fa-sun"></i>
+            </div>
         </div>
         <div class="main">
-           <div class="sub-main " >
-            <form>
+            <div class="sub-main ">
+                <div class="buttons">
+                    <button class="btn41-43 btn-41 btn-signup">SignUp</button>
+                    <button class="btn41-43 btn-41 btn-login">Login</button>
+                </div>
+                <div class="forms">
+                    <div class="form1">
+                        <form action="" class="SignUp" autocomplete="off">
 
-                <div class="profile-img">
-                    <img src="https://i.pinimg.com/564x/c8/72/bd/c872bd07738e9b32ec79da9c8428fa12.jpg" alt="">
+                            <div class="name">
+                                <label for="name">Name</label>
+                                <input autocomplete="off"  type="text" class="animate__animated animate__fadeInDown" id="name"
+                                    placeholder="Enter Full Name">
+                            </div>
+                            <div class="signUp_userName animate__animated animate__fadeInDown">
+                                <label for="signUp_userName">Username</label>
+                                <input type="text" class="animate__animated animate__fadeInDown" id="signUp_userName"
+                                    placeholder="Enter Username">
+                            </div>
+                            <div class="mail">
+                                <label for="mail">Email</label>
+                                <input type="email" class="animate__animated animate__fadeInDown" id="mail"
+                                    placeholder="Enter Email">
+                            </div>
+                            <div class="sign-pass">
+                                <label for="sign-pass">Create Password</label>
+                                <input type="password" class="animate__animated animate__fadeInDown" id="create_pass"
+                                    placeholder="Enter Password">
+                            </div>
+                            <div class="sign-pass">
+                                <label for="cnfrm">Confirm Password</label>
+                                <input type="password" class="animate__animated animate__fadeInDown" id="cnfrm"
+                                    placeholder="Enter Password">
+                            </div>
+                            <div class="signUp-btn">
+                                <button class="signUp-btn1 bn632-hover bn28">Sign in</button>
+                                <button
+                                    class="signUp-btn2 bn632-hover bn23 animate__animated animate__bounceIn">Login</button>
+                            </div>
+                            <p class="errorMsg_insignUp"></p>
+                        </form>
+                        <p class="error_signUp"></p>
+                    </div>
+
+                    <div class="form2">
+                        <form class="login">
+
+                            <div class="profile-img">
+                                <img src="https://i.pinimg.com/564x/c8/72/bd/c872bd07738e9b32ec79da9c8428fa12.jpg"
+                                    alt="">
+                            </div>
+                            <div class="username animate__animated animate__fadeInDown">
+                                <label for="username">Username</label>
+                                <input type="text" class="animate__animated animate__fadeInDown" id="username"
+                                    placeholder="Enter Username">
+                            </div>
+                            <div class="password animate__animated animate__fadeInDown">
+                                <label for="password">Password</label>
+                                <input type="password" class="animate__animated animate__fadeInDown" id="password"
+                                    placeholder="Enter Password">
+                            </div>
+                            <div class="login-button">
+                                <p class="errormsg"></p>
+                                <button class="button1  bn632-hover bn28 ">Login</button>
+                                <button
+                                    class="button2 bn632-hover bn23 animate__animated animate__bounceIn">Login</button>
+                            </div>
+                            <div class="forget">
+                                <div class="rememberMe">
+                                    <input type="checkbox" id="remember"><span for="remember">Remember me</span>
+                                </div>
+                                <div class="forget-pass">
+                                    <a href="">Forgot Password</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="username animate__animated animate__fadeInDown">
-                    <label for="username">Username</label>
-                    <input type="text" class="animate__animated animate__fadeInDown" id="username" placeholder="Enter Username">
+            </div>
+            <p class="notAble"></p>
+            <div class="resetPassword animate__animated">
+                <div class="closee">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                    <p>RESET PASSWORD</p>
                 </div>
-                <div class="password animate__animated animate__fadeInDown">
-                    <label for="password">Password</label>
-                    <input type="password" class="animate__animated animate__fadeInDown" id="password" placeholder="Enter Password">
+                <div class="passChange_Container">
+                    <div class="verify">
+                        <div class="checkUser">
+                            <label for="checkUser">Enter Username</label>
+                            <input type="text" id="checkUser">
+                        </div>
+                        <div class="checkPass">
+                            <label for="checkEmail">Enter Email</label>
+                            <input type="email" id="checkEmail">
+                        </div>
+                        <button class="btn41-43 btn-41 chngeVerify">Change Password</button>
+                    </div>
+
+                    <div class="newPass">
+                        <div class="createNew">
+                            <label for="checkUser">Create New Password</label>
+                            <input type="password" id="creatNew">
+                        </div>
+                        <div class="confirmPass">
+                            <label for="cnfrmPass">Confirm Password</label>
+                            <input type="password" id="cnfrmPass">
+                        </div>
+                        <button class="btn41-43 btn-41 cnfrmPassBtn">Change Password</button>
+                    </div>
+                    
                 </div>
-                <div class="login-button">
-                    <p></p>
-                    <button class="button1  bn632-hover bn28 ">Login</button>
-                    <button class="button2 bn632-hover bn23 animate__animated animate__bounceIn">Login</button>
+                <div class="resetError">
+                    <span></span>
                 </div>
-                <div class="forget">
-                <div class="rememberMe">
-                    <input type="checkbox" id="remember"><span for="remember">Remember me</span>
-                </div>
-                <div class="forget-pass">
-                    <a href="">Forgot Password</a>
-                </div>
-                </div>
-            </form>
-          
-           </div>
-           <p class="notAble"></p>
+            </div>
         </div>
+
+        <!-- <div class="resetPassword">
+            <div class="checkUser">
+                <label for="checkUser">Enter Username</label>
+                <input type="text" id="checkUser">
+            </div>
+            <div class="checkPass">
+                <label for="checkEmail">Enter Email</label>
+                <input type="email" id="checkEmail">
+            </div>
+            <button>Change Password</button>
+        </div> -->
+
+
         <div class="footer">
             <div class="social-icons">
                 <a href=""><i class="fa-brands fa-github"></i></a>
@@ -64,4 +164,5 @@
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/7c5861f7d9.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
